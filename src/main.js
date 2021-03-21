@@ -1,6 +1,8 @@
 const express = require('express')
 const app = express()
 const port = 3000
+// 使用JSON中间件
+app.use(express.json())
 
 app.listen(port, () => {
   console.log('^_^, 服务已经启动')
@@ -32,4 +34,16 @@ app.get('/posts/:postId', (req, res) => {
     return item.id === Number(postId)
   })
   res.send(JSON.stringify(posts[0]))
+})
+
+app.post('/posts', (req, res) => {
+  let { body, header } = req
+  console.log(body, header)
+  // 设置响应码
+  res.status(201)
+  // 输出头部数据
+  console.log(req.headers.singal)
+  res.send({
+    message: `成功创建了${body.name}`
+  })
 })
