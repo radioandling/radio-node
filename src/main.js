@@ -5,7 +5,6 @@ let HeaderContentType = {
 }
 
 const server = http.createServer((request, response) => {
-  console.log(request.url)
   let data = {
     id: 1,
     title: '关山月',
@@ -18,7 +17,6 @@ const server = http.createServer((request, response) => {
   response.write(resData)
   response.end()
 })
-
 
 server.listen('3000', () => {
   console.log('服务已经启动了...')
