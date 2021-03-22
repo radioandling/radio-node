@@ -345,8 +345,12 @@
         "version": "3b05c396564e51753e921e1cc4aae1cf7cd9be53c891cf2e81fa29f11c0bd373",
         "signature": "3b05c396564e51753e921e1cc4aae1cf7cd9be53c891cf2e81fa29f11c0bd373"
       },
+      "../src/app/index.ts": {
+        "version": "699ba7261a605c6f6112316902d27855ebba5ba13aabd7763a85acd0c40ad018",
+        "signature": "4654f92731de7c18eb496ebf4134d15c881a25c2d6579affd293cde1951e4ced"
+      },
       "../src/main.ts": {
-        "version": "a5257033557ee6c7b37b11e9607c7529a0789f5f70ef0876d7c9d3af30c2729c",
+        "version": "6111cbcba9cac522275db4dfdeb05a48f5d0ee5a88a72f724dd68f40048a3fd2",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
       }
     },
@@ -622,8 +626,11 @@
         "../node_modules/@types/express-serve-static-core/index.d.ts",
         "../node_modules/@types/qs/index.d.ts"
       ],
-      "../src/main.ts": [
+      "../src/app/index.ts": [
         "../node_modules/@types/express/index.d.ts"
+      ],
+      "../src/main.ts": [
+        "../src/app/index.ts"
       ]
     },
     "exportedModulesMap": {
@@ -881,6 +888,9 @@
         "../node_modules/@types/serve-static/index.d.ts",
         "../node_modules/@types/express-serve-static-core/index.d.ts",
         "../node_modules/@types/qs/index.d.ts"
+      ],
+      "../src/app/index.ts": [
+        "../node_modules/@types/express-serve-static-core/index.d.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -970,6 +980,7 @@
       "../node_modules/@types/connect/index.d.ts",
       "../node_modules/@types/body-parser/index.d.ts",
       "../node_modules/@types/express/index.d.ts",
+      "../src/app/index.ts",
       "../src/main.ts"
     ]
   },
