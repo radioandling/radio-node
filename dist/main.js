@@ -4,5 +4,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const index_1 = __importDefault(require("./app/index"));
-index_1.default.listen(3000, () => { console.log('^_^, 服务已经启动'); });
+const app_config_1 = require("./app/app.config");
+index_1.default.listen(app_config_1.APP_PORT, () => { console.log('^_^, 服务已经启动'); });
 //# sourceMappingURL=main.js.map

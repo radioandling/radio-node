@@ -345,12 +345,32 @@
         "version": "3b05c396564e51753e921e1cc4aae1cf7cd9be53c891cf2e81fa29f11c0bd373",
         "signature": "3b05c396564e51753e921e1cc4aae1cf7cd9be53c891cf2e81fa29f11c0bd373"
       },
+      "../src/post/postserver.ts": {
+        "version": "a5c1583b9380a1ffc3165fc9d96c7549fe28f8ebba2f9e3b120a6c06f2ea7ac2",
+        "signature": "52cf9f5045e4e06800eaf440652432d7545aae3d3da4c86b2a4531a10947c0a2"
+      },
+      "../src/post/postcontroller.ts": {
+        "version": "4ff1bb9e881c0e1bd8a21fba5a696d1438a5d8e628f1aeeb83849fc0fc9e947b",
+        "signature": "a17e89055c575aa25f9c18163610c5238825c17d7c25c2d1a9df0bf69c051edc"
+      },
+      "../src/app/app.middleware.ts": {
+        "version": "08c985c00bd777c04430b6ba218b5b9398b037be278020e398c492f7334d902c",
+        "signature": "c8a1568aec6df06e270c3c813bf19963a679aaa5e0bec1dc4cfc68a367beb12a"
+      },
+      "../src/post/postrouter.ts": {
+        "version": "a83b77597f0d02f12735b957ec0cc18e1ecfefa5e2736725e2092bffb91742e3",
+        "signature": "c106970ee4b686b5ebf0964ea4e0d1b2af02bdecd2d5cfeecedeb7bb5b2f404b"
+      },
       "../src/app/index.ts": {
-        "version": "699ba7261a605c6f6112316902d27855ebba5ba13aabd7763a85acd0c40ad018",
+        "version": "1a5ed39703735b014f7d253e7e4ba2f93f97050e867fff744c1f25379dcead03",
         "signature": "4654f92731de7c18eb496ebf4134d15c881a25c2d6579affd293cde1951e4ced"
       },
+      "../src/app/app.config.ts": {
+        "version": "815cffcea5e9f9d26b93994a0f5139f2ecc087e6396e507d98a8f7d93897ad9f",
+        "signature": "347ed3d3be049df8788f3e091d2699f22ef142ac9464becaa604e681cdca3957"
+      },
       "../src/main.ts": {
-        "version": "6111cbcba9cac522275db4dfdeb05a48f5d0ee5a88a72f724dd68f40048a3fd2",
+        "version": "7a9a9e40e1ae3dd2db91aa9226d50306dc868dee833e783816247dbdfe3be22b",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
       }
     },
@@ -626,11 +646,26 @@
         "../node_modules/@types/express-serve-static-core/index.d.ts",
         "../node_modules/@types/qs/index.d.ts"
       ],
-      "../src/app/index.ts": [
+      "../src/post/postcontroller.ts": [
+        "../node_modules/@types/express/index.d.ts",
+        "../src/post/postserver.ts"
+      ],
+      "../src/app/app.middleware.ts": [
         "../node_modules/@types/express/index.d.ts"
       ],
+      "../src/post/postrouter.ts": [
+        "../node_modules/@types/express/index.d.ts",
+        "../src/post/postcontroller.ts",
+        "../src/app/app.middleware.ts"
+      ],
+      "../src/app/index.ts": [
+        "../node_modules/@types/express/index.d.ts",
+        "../src/post/postrouter.ts",
+        "../src/app/app.middleware.ts"
+      ],
       "../src/main.ts": [
-        "../src/app/index.ts"
+        "../src/app/index.ts",
+        "../src/app/app.config.ts"
       ]
     },
     "exportedModulesMap": {
@@ -889,6 +924,19 @@
         "../node_modules/@types/express-serve-static-core/index.d.ts",
         "../node_modules/@types/qs/index.d.ts"
       ],
+      "../src/post/postcontroller.ts": [
+        "../node_modules/@types/express-serve-static-core/index.d.ts",
+        "../node_modules/@types/qs/index.d.ts",
+        "../node_modules/@types/express/index.d.ts"
+      ],
+      "../src/app/app.middleware.ts": [
+        "../node_modules/@types/express-serve-static-core/index.d.ts",
+        "../node_modules/@types/qs/index.d.ts",
+        "../node_modules/@types/express/index.d.ts"
+      ],
+      "../src/post/postrouter.ts": [
+        "../node_modules/@types/express-serve-static-core/index.d.ts"
+      ],
       "../src/app/index.ts": [
         "../node_modules/@types/express-serve-static-core/index.d.ts"
       ]
@@ -980,8 +1028,13 @@
       "../node_modules/@types/connect/index.d.ts",
       "../node_modules/@types/body-parser/index.d.ts",
       "../node_modules/@types/express/index.d.ts",
+      "../src/post/postserver.ts",
+      "../src/app/app.middleware.ts",
+      "../src/post/postrouter.ts",
       "../src/app/index.ts",
-      "../src/main.ts"
+      "../src/app/app.config.ts",
+      "../src/main.ts",
+      "../src/post/postcontroller.ts"
     ]
   },
   "version": "3.8.3"
