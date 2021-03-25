@@ -24,7 +24,7 @@ export const defaultErrorHandler = (
       message = '服务器出了点问题'
       break
   }
-  console.log(222)
+  console.log(333)
   response.status(statusCode).send({ message })
 
 }
