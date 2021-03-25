@@ -1029,12 +1029,12 @@
       "../node_modules/@types/body-parser/index.d.ts",
       "../node_modules/@types/express/index.d.ts",
       "../src/post/postserver.ts",
-      "../src/app/app.middleware.ts",
+      "../src/post/postcontroller.ts",
       "../src/post/postrouter.ts",
       "../src/app/index.ts",
       "../src/app/app.config.ts",
       "../src/main.ts",
-      "../src/post/postcontroller.ts"
+      "../src/app/app.middleware.ts"
     ]
   },
   "version": "3.8.3"
