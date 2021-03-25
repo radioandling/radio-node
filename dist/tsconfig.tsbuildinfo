@@ -354,7 +354,7 @@
         "signature": "a17e89055c575aa25f9c18163610c5238825c17d7c25c2d1a9df0bf69c051edc"
       },
       "../src/app/app.middleware.ts": {
-        "version": "08c985c00bd777c04430b6ba218b5b9398b037be278020e398c492f7334d902c",
+        "version": "4651e5d35e1ff09c49f1b9cacec0f461648e8c7f648332964a0a0291ac0353d0",
         "signature": "c8a1568aec6df06e270c3c813bf19963a679aaa5e0bec1dc4cfc68a367beb12a"
       },
       "../src/post/postrouter.ts": {
