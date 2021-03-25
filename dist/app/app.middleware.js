@@ -12,6 +12,7 @@ exports.defaultErrorHandler = (error, request, response, next) => {
             message = '服务器出了点问题';
             break;
     }
+    console.log(222);
     response.status(statusCode).send({ message });
 };
 //# sourceMappingURL=app.middleware.js.map
